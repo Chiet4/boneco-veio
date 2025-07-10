@@ -1,8 +1,10 @@
-import React from "react";
-import Prateleira from "./components/Prateleira/Prateleira";
+import React from 'react';
+import CarouselDestaques from './components/CarouselDestaques';
 
-export default function App() {
-  return <>
-    {/* <Prateleira></Prateleira> */}
-  </>;
-}
+const App = () => (
+  <div>
+    <CarouselDestaques />
+  </div>
+);
+
+export default App;
