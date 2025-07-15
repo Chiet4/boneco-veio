@@ -1,3 +1,5 @@
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 import { useMemo } from 'react';
 import { useCart } from '../context/CartContext';
 import styles from './CarrinhoPage.module.css';
@@ -15,6 +17,8 @@ export default function CarrinhoPage() {
   const total = subtotal + frete;
 
   return (
+    <>
+    <Header />
     <div className={styles.paginaCarrinho}>
       <main className={styles.conteudoPrincipal}>
         {/* COLUNA DA ESQUERDA: ITENS */}
@@ -61,5 +65,7 @@ export default function CarrinhoPage() {
         </aside>
       </main>
     </div>
+    <Footer />
+    </>
   );
 }

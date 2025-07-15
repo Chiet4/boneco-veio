@@ -7,6 +7,8 @@
   --cor-bege: #dbd09d;
   --cor-terracota: #d96851;
   --cor-borda-suave: #E0E0E0;
+   /*Ignorar irregularidade das cores com o root*/
+
 }
 
 .paginaCarrinho {
@@ -39,10 +41,10 @@
 
 .tituloSecao {
   font-family: 'Xiolosa', sans-serif; /* Usando a fonte personalizada */
-  font-size: 2.0rem;                /* Mesmo tamanho do perfil */
+  font-size: 2.2rem;                /* Mesmo tamanho do perfil */
   font-weight: 600;
   margin: 0 0 1.5rem 0;
-  color: var(--cor-terracota);       /* Cor terracota dos títulos do perfil */
+  color: rgb(16, 53, 56);       
 }
 
 /* Estilos de cada item na lista */
@@ -69,7 +71,7 @@
 .infoItem h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.1rem;
-  color: var(--cor-texto-principal); /* Verde-escuro principal */
+  color: var(--cor--principal); /* Verde-escuro principal */
 }
 
 .infoItem p {
@@ -123,7 +125,7 @@
   padding: 1rem;
   border-radius: 4px;
   border: none;
-  background-color: var(--cor-texto-principal); /* Usando a cor terracota como destaque */
+  background-color: rgb(115, 152, 133); /* Usando a cor terracota como destaque */
   color: var(--cor-fundo);
   font-size: 1rem;
   font-weight: bold;
@@ -133,5 +135,5 @@
 }
 
 .botaoFinalizar:hover {
-  background-color: var(--cor-bege); /* Mudar para a cor bege no hover */
+  background-color: var(--cor-texto-secundario); /* Mudar para a cor bege no hover */
 }

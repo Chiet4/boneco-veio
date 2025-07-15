@@ -8,17 +8,18 @@
   --cor-terracota: #d96851;
   --cor-borda-suave: #E0E0E0;
   --cor-borda-cinza: #ccc;            /* Adicionado para bordas de botões */
+  /*Ignorar irregularidade das cores com o root*/
 }
 
 .paginaPerfil {
   background-color: var(--cor-fundo-pagina);
-  min-height: 100vh;
+  padding-bottom: 2rem;
 }
 
 .banner {
-  background-color: var(--cor-texto-principal);
+  background-color:  rgb(16, 53, 56);;
   color: var(--cor-fundo);
-  padding: 3rem 4rem 5rem;
+  padding: 3rem 4rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +49,7 @@
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-color: var(--cor-terracota);
+  background-color: rgb(115, 152, 133);;
   color: var(--cor-fundo);
   display: flex;
   align-items: center;
@@ -75,10 +76,11 @@
 }
 
 .tituloSecao {
-  font-size: 1.7rem;
+  font-size: 2rem;
+  padding-bottom: 1%;
   font-weight: 600;
   margin: 0;
-  color: var(--cor-terracota);
+  color: rgb(16, 53, 56); 
   font-family: 'Xiolosa', sans-serif; 
 }
 
@@ -123,12 +125,15 @@
 }
 
 .entregaStatus {
-  font-weight: bold;
-  color: var(--cor-texto-principal);
+  font-weight: 600;
+  font-size: small;
+  color:  rgb(16, 53, 56);
 }
 
 .produtoNome {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: small;
+  color: rgb(16, 53, 56) ;
 }
 
 .pedidoAcoes {
@@ -146,8 +151,8 @@
 }
 
 .btnPrimario {
-  background-color: var(--cor-bege);
-  color: var(--cor-texto-principal);
+  background-color: rgb(115, 152, 133);
+  color: var(--cor-fundo)
 }
 
 .btnSecundario {

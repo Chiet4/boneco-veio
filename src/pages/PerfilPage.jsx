@@ -1,3 +1,5 @@
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 import styles from './PerfilPage.module.css';
 // No futuro, o logo virá dos assets do projeto
 // import logoBranco from '../../assets/logo-branco.svg';
@@ -13,6 +15,8 @@ export default function PerfilPage() {
   };
 
   return (
+    <>
+    <Header />
     <div className={styles.paginaPerfil}>
       {/* BLOCO 1: BANNER SUPERIOR */}
       <header className={styles.banner}>
@@ -46,12 +50,12 @@ export default function PerfilPage() {
             <div className={styles.pedidoBody}>
               <div className={styles.produtoInfo}>
                 <img 
-                  src="src/assets/image/original_yorgeRuiz.webp" // Placeholder para a imagem do produto
+                  src="src/assets/image/15.webp" // Placeholder para a imagem do produto
                   alt="Nome do Produto" 
                   className={styles.produtoImagem}
                 />
                 <div>
-                  <p className={styles.entregaStatus}><strong>Chega entre os dias 14 julho e 22 julho</strong></p>
+                  <p className={styles.entregaStatus}>Chega entre os dias 14 julho e 22 julho</p>
                   <p className={styles.produtoNome}>Yorge Ruiz e Jaspe - Arte Viva de Fortaleza</p>
                 </div>
               </div>
@@ -81,5 +85,7 @@ export default function PerfilPage() {
         {/* Futuramente, aqui entrariam as outras seções como Configurações e Segurança */}
       </main>
     </div>
+    <Footer />
+    </>
   );
 }
