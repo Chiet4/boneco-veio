@@ -1,0 +1,63 @@
+:root {
+  --cor-primaria: #103538;
+  --cor-secundaria: #739885;
+  --cor-clara-1: #dbd09d;
+  --cor-clara-2: #d8b058;
+  --cor-alerta: #d96851;
+  --cor-branca: #ffffff;
+  --cor-preta: #000000;
+
+  --cor-fundo-card: var(--cor-branca);
+  --cor-texto-principal: var(--cor-preta);
+  --cor-texto-secundario: #777c89;
+  --cor-acao: var(--cor-clara-2);
+  --cor-acao-hover: #fff396;
+
+  --sombra-leve: 0 1px 4px rgba(0, 0, 0, 0.1);
+  --sombra-intensa: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+  --fonte-principal: "Plus Jakarta Sans", sans-serif;
+}
+
+.emconstrucao {
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-principal);
+  font-family: var(--fonte-principal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.emconstrucao h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--cor-clara-2);
+}
+
+.emconstrucao p {
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  color: var(--cor-branca);
+}
+
+.btnvoltar {
+  background-color: var(--cor-acao);
+  color: var(--cor-texto-principal);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btnvoltar:hover {
+  background-color: var(--cor-acao-hover);
+  color: var(--cor-preta);
+}

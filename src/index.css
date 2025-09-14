@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Xiolosa';
-  src: url('./assets/fonts/Xiolosa.woff2') format('woff2'),
+  src: url('./assets/fonts/Xiolosa.ttf') format('woff2'),
        url('./assets/fonts/Xiolosa.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;

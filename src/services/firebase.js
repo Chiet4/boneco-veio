@@ -21,7 +21,7 @@ const firebaseConfig = {
 };
 
 console.log("🔥 AMBIENTE:", import.meta.env.MODE);
-console.log("🔥 projectId:", import.meta.env.VITE_PROJECT_ID);
+console.log("🔥 projectId:", firebaseConfig.projectId);
 
 
 export const app = initializeApp(firebaseConfig);

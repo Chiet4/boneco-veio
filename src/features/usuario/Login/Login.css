@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.bodyLogin {
+  font-family: "Montserrat", sans;
+  margin: 0;
+  padding: 0;
+  background-color: #103538;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #103538;
+}
+.login-container {
+  background: #dbd09d;
+  padding: 30px 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+.login-form label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #103538;
+}
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+.login-form button {
+  background-color: #d8b058;
+  color: #103538;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+.login-form button:hover {
+  background-color: #b0872c;
+}
+
+.botao-voltar {
+  background-color: #d8b058;
+  color: #103538;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.botao-voltar:hover {
+    background-color: #b0872c;
+}

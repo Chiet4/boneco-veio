@@ -15,7 +15,7 @@ Loja online de action figures baseados na cultura cearense.
 - Página de login (simulado)
 
 ## 🔗 Deploy
-> Será publicado via [Vercel](https://vercel.com/)
+> O projeto está no [Vercel](https://boneco-veio.vercel.app/)
 
 ## 📌 Padrão de commits
 > Utilizamos o padrão: [iuricode/padroes-de-commits](https://github.com/iuricode/padroes-de-commits)

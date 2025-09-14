@@ -1,7 +1,7 @@
 // 
 export const uploadImage = async (file) => {
-  const user = import.meta.env.VITE_USER_CLOUDINARY;
-  const preset = import.meta.env.VITE_UPLOAD_PRESET;
+  const user = import.meta.env.USER_CLOUDINARY;
+  const preset = import.meta.env.UPLOAD_PRESET;
   const url = `https://api.cloudinary.com/v1_1/${user}/image/upload`;
   const formData = new FormData();
   formData.append("file", file);

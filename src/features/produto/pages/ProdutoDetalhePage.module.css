@@ -1,0 +1,151 @@
+
+:root {
+  --cor-fundo: #ffffff;
+  --cor-destaque: #d8b058;
+  --cor-destaque-suave: #fff4d4;
+  --cor-texto: #0b0c10;
+  --cor-texto-suave: #555;
+  --cor-preco: #103538;
+  --cor-chip: #f4f4f4;
+  --cor-aviso: #d96851;
+
+  --fonte: 'Plus Jakarta Sans', sans-serif;
+
+  --raio: 1rem;
+  --sombra-leve: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.page {
+  padding: 2rem;
+  font-family: var(--fonte);
+  background-color: var(--cor-fundo);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cardDetalhado {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  background-color: var(--cor-destaque-suave);
+  padding: 2rem;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-leve);
+  flex-wrap: wrap;
+}
+
+.imagemGrande {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border-radius: var(--raio);
+  object-fit: contain;
+  background: white;
+  padding: 1rem;
+}
+
+.info {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+}
+
+.info p {
+  font-size: 1rem;
+  color: var(--cor-texto-suave);
+  line-height: 1.6;
+}
+
+.info strong {
+  color: var(--cor-texto);
+}
+
+.chip {
+  display: inline-block;
+  background-color: var(--cor-chip);
+  color: var(--cor-texto);
+  padding: 0.3rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+button {
+  margin-bottom: 1rem;
+  background-color: var(--cor-destaque);
+  color: var(--cor-texto);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--cor-destaque-suave);
+  color: white;
+}
+
+.voltarContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.chipGroup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.avaliacao {
+  font-size: 1.1rem;
+  color: #f4b400;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 1rem;
+  }
+
+  .cardDetalhado {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .imagemGrande {
+    max-width: 100%;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .info h1 {
+    font-size: 1.5rem;
+  }
+
+  .info p {
+    font-size: 0.95rem;
+  }
+
+  .avaliacao {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .chip {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+  }
+}
