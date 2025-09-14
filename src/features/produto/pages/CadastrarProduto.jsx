@@ -1,3 +1,4 @@
+// src/features/produto/pages/CadastrarProduto.jsx
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ProdutoForm from "../components/ProdutoForm/ProdutoForm";
@@ -8,30 +9,36 @@ export default function CadastrarProduto() {
   const navigate = useNavigate();
   const { adicionarProduto, carregarProdutos } = useProdutos();
 
-  // Estado local do Snackbar
   const [snackbar, setSnackbar] = useState({
     open: false,
     message: "",
     severity: "success",
   });
 
-  // Exibir Snackbar com mensagem personalizada
   const mostrarSnackbar = (message, severity = "success") => {
     setSnackbar({ open: true, message, severity });
   };
 
-  // Fechar Snackbar
   const handleFecharSnackbar = () =>
     setSnackbar((prev) => ({ ...prev, open: false }));
 
-  // Lógica de envio do formulário
   const handleSubmit = async (produtoData) => {
     try {
-      await adicionarProduto(produtoData);
-      await carregarProdutos();
-      mostrarSnackbar("Produto cadastrado com sucesso!");
+      // produtoData já vem montado pelo useProdutoForm (imageSrc/title/description/originalPrice/discount/isNew/rating/stock)
+      await adicionarProduto(produtoData);  // -> POST /admin/produtos
+      await carregarProdutos();             // atualiza a listagem
+
+      // Redireciona para a prateleira ADMIN com mensagem (sua Prateleira já consome location.state.mensagem)
+      navigate("/produtos", {
+        state: { mensagem: "Produto cadastrado com sucesso!" },
+      });
     } catch (error) {
-      mostrarSnackbar("Erro ao cadastrar produto.", "error");
+      // Tenta extrair mensagem do backend (Zod 422, etc.)
+      const backendMsg =
+        error?.response?.data?.message ||
+        error?.message ||
+        "Erro ao cadastrar produto.";
+      mostrarSnackbar(backendMsg, "error");
     }
   };
 
@@ -41,9 +48,9 @@ export default function CadastrarProduto() {
         modoEdicao={false}
         onSubmit={handleSubmit}
         onCancel={() => navigate("/produtos")}
+        // onSubmitCallback opcional: o hook já dispara snackbar interno no sucesso
       />
 
-      {/* Snackbar com estilo idêntico ao da Prateleira */}
       <Snackbar
         open={snackbar.open}
         autoHideDuration={3000}
