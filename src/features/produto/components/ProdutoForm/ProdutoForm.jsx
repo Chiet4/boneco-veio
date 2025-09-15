@@ -110,6 +110,8 @@ export default function ProdutoForm({
                   type="number"
                   id="preco"
                   name="preco"
+                  min="0"
+                  step="1"
                   value={dadosFormulario.preco}
                   onChange={lidarComMudanca}
                   placeholder="Preço"
@@ -123,6 +125,8 @@ export default function ProdutoForm({
                   type="number"
                   id="desconto"
                   name="desconto"
+                  min="0"
+                  step="1"
                   value={dadosFormulario.desconto}
                   onChange={lidarComMudanca}
                   placeholder="Desconto (%)"
@@ -141,7 +145,7 @@ export default function ProdutoForm({
                 step="1"
                 value={dadosFormulario.estoque}
                 onChange={lidarComMudanca}
-                placeholder="Quantidade em estoque"
+                placeholder="Quantidade"
                 className={styles.input}
               />
             </div>
