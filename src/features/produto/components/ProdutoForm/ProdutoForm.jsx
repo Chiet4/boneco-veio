@@ -110,8 +110,6 @@ export default function ProdutoForm({
                   type="number"
                   id="preco"
                   name="preco"
-                  min="0"
-                  step="1"
                   value={dadosFormulario.preco}
                   onChange={lidarComMudanca}
                   placeholder="Preço"
@@ -181,7 +179,7 @@ export default function ProdutoForm({
                 É novidade?
               </label>
 
-              <label>
+              {/* <label>
                 <input
                   type="checkbox"
                   name="favorito"
@@ -189,7 +187,7 @@ export default function ProdutoForm({
                   onChange={lidarComMudanca}
                 />
                 Favorito
-              </label>
+              </label> */}
             </div>
 
             <div className={styles.buttonGroup}>
