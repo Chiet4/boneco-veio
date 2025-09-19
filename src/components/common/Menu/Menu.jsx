@@ -26,7 +26,7 @@ const Menu = () => {
           <Link to="/produtos"  onClick={handleCloseMenu} className={`${styles.links_menu} ${url === '/produtos' ? styles.current_page : ''}`}>Produtos</Link>
           <Link to="/perfil" onClick={handleCloseMenu} className={`${styles.links_menu} ${url === '/perfil' ? styles.current_page : ''}`}>Perfil</Link>
           <Link to="/pedidos" onClick={handleCloseMenu} className={`${styles.links_menu} ${url === '/pedidos' ? styles.current_page : ''}`}>Pedidos</Link>
-          <Link to="/rastreio" onClick={handleCloseMenu} className={`${styles.links_menu} ${url === '/rastreio' ? styles.current_page : ''}`}>Usuários</Link>
+          <Link to="/usuarios" onClick={handleCloseMenu} className={`${styles.links_menu} ${url === '/usuarios' ? styles.current_page : ''}`}>Usuários</Link>
           <Link to="/contato" onClick={handleCloseMenu} className={`${styles.links_menu} ${url === '/contato' ? styles.current_page : ''}`}>Contato</Link>
           <Link to="/endereco" onClick={handleCloseMenu} className={`${styles.links_menu} ${url === '/endereco' ? styles.current_page : ''}`}>Endereço</Link>
         </nav>

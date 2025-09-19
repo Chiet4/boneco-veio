@@ -56,14 +56,14 @@ export default function CardDisplay({
       onKeyDown={(e) => e.key === "Enter" && handleCardClick()}
       aria-label={`Produto ${title}`}
     >
-      {/* Topo: tags + favorito (somente público) */}
+      {/* Topo: tags + favorito */}
       <Box className={styles.topBox}>
         <Box className={styles.tags}>
           {isNew && <div className={styles.chipYellow}>Novidade</div>}
           {discount && <div className={styles.chipBlue}>{`${discount}% off`}</div>}
         </Box>
 
-        {!adminMode && (
+        {/* {!adminMode && (
           <Tooltip title={isFavorite ? "Remover dos favoritos" : "Adicionar aos favoritos"}>
             <IconButton
               onClick={(e) => {
@@ -76,7 +76,7 @@ export default function CardDisplay({
               {isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
             </IconButton>
           </Tooltip>
-        )}
+        )} */}
       </Box>
 
       {/* Imagem */}

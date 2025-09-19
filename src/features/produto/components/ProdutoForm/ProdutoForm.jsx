@@ -123,6 +123,8 @@ export default function ProdutoForm({
                   type="number"
                   id="desconto"
                   name="desconto"
+                  min="0"
+                  step="1"
                   value={dadosFormulario.desconto}
                   onChange={lidarComMudanca}
                   placeholder="Desconto (%)"
@@ -141,7 +143,7 @@ export default function ProdutoForm({
                 step="1"
                 value={dadosFormulario.estoque}
                 onChange={lidarComMudanca}
-                placeholder="Quantidade em estoque"
+                placeholder="Quantidade"
                 className={styles.input}
               />
             </div>
@@ -177,7 +179,7 @@ export default function ProdutoForm({
                 É novidade?
               </label>
 
-              <label>
+              {/* <label>
                 <input
                   type="checkbox"
                   name="favorito"
@@ -185,7 +187,7 @@ export default function ProdutoForm({
                   onChange={lidarComMudanca}
                 />
                 Favorito
-              </label>
+              </label> */}
             </div>
 
             <div className={styles.buttonGroup}>

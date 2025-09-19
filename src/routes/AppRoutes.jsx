@@ -10,6 +10,7 @@ import PrateleiraPage from '../pages/PrateleiraPage';
 import CarrinhoPage from '../features/carrinho/pages/CarrinhoPage';
 import NotFound from '../features/notfound/NotFoundComponent';
 import Login from '../features/usuario/Login/Login';
+import AdminUsuariosPage from '../features/usuario/listarUsuarios/AdminUsuariosPage';
 import ProdutoDetalhePage from '../features/produto/pages/ProdutoDetalhePage';
 import Emconstrucao from '../features/EmConstrucao/Emconstrucao';
 
@@ -27,7 +28,7 @@ function AppRoutes() {
           <Route path="/admin/produtos/novo" element={<CadastrarProduto />} />
           <Route path="/carrinho" element={<CarrinhoPage />} />
           <Route path="/pedidos" element={<Emconstrucao />} />
-          <Route path="/rastreio" element={<Emconstrucao />} />
+          <Route path="/usuarios" element={< AdminUsuariosPage />} />
           <Route path="/contato" element={<Emconstrucao />} />
           <Route path="/endereco" element={<Emconstrucao />} />
           <Route path="*" element={<NotFound />} />
