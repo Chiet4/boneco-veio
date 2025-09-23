@@ -1,4 +1,3 @@
-// src/features/produto/services/adminPedidosService.js
 import api from "../../services/api";
 
 export const ADMIN_ORDER_STATUSES = ["pendente", "pago", "enviado", "cancelado"];
