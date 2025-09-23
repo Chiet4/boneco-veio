@@ -12,6 +12,7 @@ import NotFound from '../features/notfound/NotFoundComponent';
 import Login from '../features/usuario/Login/Login';
 import AdminUsuariosPage from '../features/usuario/listarUsuarios/AdminUsuariosPage';
 import ProdutoDetalhePage from '../features/produto/pages/ProdutoDetalhePage';
+import AdminPedidosPage from '../features/pedidos/AdminPedidosPage';
 import Emconstrucao from '../features/EmConstrucao/Emconstrucao';
 
 function AppRoutes() {
@@ -27,7 +28,7 @@ function AppRoutes() {
           <Route path="/admin/produtos/editar/:id" element={<EditarProduto />} />
           <Route path="/admin/produtos/novo" element={<CadastrarProduto />} />
           <Route path="/carrinho" element={<CarrinhoPage />} />
-          <Route path="/pedidos" element={<Emconstrucao />} />
+          <Route path="/pedidos" element={<AdminPedidosPage />} />
           <Route path="/usuarios" element={< AdminUsuariosPage />} />
           <Route path="/contato" element={<Emconstrucao />} />
           <Route path="/endereco" element={<Emconstrucao />} />
